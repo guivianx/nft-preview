@@ -1,0 +1,139 @@
+:root {
+
+    /*Principal*/
+
+    --Azul-suave: #8bacda;
+    --Ciano: #00fff7;
+
+    /*Neutro*/
+
+    --Azul-escuro-fundoprinc: #0d192b;
+    --Azul-escuro-fnd-cartao: #14253d;
+    --Azul-escuro-linha: #2f415b;
+    --Branco:#ffffff;
+
+    /*fonte 18px*/
+
+    --fonte-outfit:'Outfit', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-outfit);
+    background-color: var(--Azul-escuro-fundoprinc);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+main {
+    padding: 20px;
+    box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.483);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Azul-escuro-fnd-cartao);
+    width: 350px;
+}
+
+
+div {
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 320px;
+    background-color: #00fff782;
+    visibility: hidden;
+    
+}
+
+main > img {
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+    width: 310px;
+    height: 320px; 
+}
+
+img:hover + div {
+    visibility: visible;
+    pointer-events: none;
+}
+
+
+
+
+main h1 {
+    text-align: left;
+    font-size: 22px;
+    color: var(--Branco);
+    padding: 15px 0px 15px 0px;
+    transition: 0.2s;
+}
+main h1:hover {
+    cursor: pointer;
+    color: var(--Ciano);
+}
+
+main p {
+    font-size: 18px;
+    color: var(--Azul-escuro-linha);
+}
+
+.stn1 {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+}
+
+section .info1 {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    gap: 5px;
+    color: var(--Ciano);
+}
+
+section .info2 {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: var(--Azul-escuro-linha);
+    
+}
+
+hr {
+    border: .5px solid var(--Azul-escuro-linha);
+}
+
+.stn2 {
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    padding: 15px 0px 0px 0px;
+}
+
+.stn2 > img {
+    border-radius: 100%;
+    border: 1px solid var(--Branco);
+    width: 35px;
+}
+
+.stn2 p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.stn2 a {
+    font-weight: normal;
+    color: var(--Branco);
+    transition: 0.2s;
+}
+.stn2 a:hover {
+    color: var(--Ciano);
+}
