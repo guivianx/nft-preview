@@ -81,14 +81,14 @@ main h1:hover {
 
 main p {
     font-size: 18px;
-    color: var(--Azul-escuro-linha);
+    color: lightslategray;
 }
 
 .stn1 {
     
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px 15px 0px;
+    padding: 25px 0px 25px 0px;
 }
 
 section .info1 {
@@ -103,7 +103,7 @@ section .info2 {
     align-items: center;
     display: flex;
     gap: 5px;
-    color: var(--Azul-escuro-linha);
+    color: lightslategrey;
     
 }
 
@@ -115,7 +115,7 @@ hr {
     gap: 15px;
     align-items: center;
     display: flex;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 15px 0px;
 }
 
 .stn2 > img {
